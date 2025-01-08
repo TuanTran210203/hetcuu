@@ -85,6 +85,7 @@ production:
     <<: *default
     database: tuantran_production
     username: tuantran
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["TUANTRAN_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
